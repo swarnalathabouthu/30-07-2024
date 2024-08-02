@@ -1,0 +1,28 @@
+An iframe (short for inline frame) in HTML is an element that allows you to embed another HTML document within the current document. It creates a rectangular region within the page where another webpage can be displayed. This is often used to embed content from other websites, such as videos, maps, or entire web pages.
+
+Here’s a basic example of an iframe:
+
+html
+Copy code
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+In this example:
+
+The src attribute specifies the URL of the page to embed.
+The width and height attributes define the size of the iframe in pixels.
+Common Attributes of iframe
+src: The URL of the page to embed.
+width and height: The size of the iframe.
+name: The name of the iframe (can be used as the target for links).
+frameborder: Specifies whether or not to display a border around the iframe (deprecated in HTML5, use CSS instead).
+allow: Specifies a feature policy for the iframe, such as allowing fullscreen mode or autoplay.
+sandbox: Adds extra restrictions to the content in the iframe for security purposes.
+allowfullscreen: Allows the iframe content to be displayed in fullscreen mode.
+Example with More Attributes
+html
+Copy code
+<iframe src="https://www.example.com" width="600" height="400" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+In this example:
+
+frameborder="0" removes the border around the iframe.
+allowfullscreen allows the embedded content to be displayed in fullscreen.
+sandbox="allow-same-origin allow-scripts" restricts the content within the iframe while allowing scripts and same-origin content.
